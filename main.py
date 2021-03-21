@@ -26,7 +26,6 @@ class AutoLoginBitrix24:
                 bitriksBot.implicitly_wait(25)  
                 uname = bitriksBot.find_element_by_xpath("/html/body/div[1]/div[2]/div/div[2]/div/div/div/form/div[2]/div/div[1]/div/div/div/div/div/div[1]/div/input")
                 uname.send_keys(self.username + Keys.ENTER)
-                uname.send_keys("nets.tj" + Keys.ENTER)
                 bitriksBot.implicitly_wait(3)
                 pwd_enter = bitriksBot.find_element_by_xpath("/html/body/div[1]/div[2]/div/div[2]/div/div/div/form/div[2]/div/div[2]/div/div/div/div/div/input")
                 pwd_enter.send_keys(self.password + Keys.ENTER)
